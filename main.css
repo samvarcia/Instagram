@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #FAFAFA;
+}
+.post-list {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 293px));
+    justify-content: center;
+    grid-gap: 28px;
+    border-top: 1px solid #F5F5F5;
+    padding-top: 20px;
+}
+.post {
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+.post-image {
+    margin: 0;
+}
+.post-image img {
+    width: 100%;
+    vertical-align: top;
+}
+.post-overlay {
+    background: rgba(0, 0, 0, .4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.post:hover .post-overlay {
+    display: flex;
+}
+.post-likes
+.post-comments {
+    width: 80px;
+    margin: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+@media screen and (max-width: 768px) {
+    .post-list {
+        grid-gap: 3px;
+    }
+}
+header {
+    width: 100%;
+    display: inline-block;
+    background: #FFFFFF;
+	color: black;
+    height: 69px;
+    position: absolute;
+    top: 0;
+    box-shadow: #999;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.search {
+    position: relative;
+    top: -60px;
+    left: 567px;
+    width: 42px;
+    height: 20px;
+    background: #FAFAFA;
+    border: none;
+    padding: 2px 90px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
+.icon {
+    width: 35px;
+    position: relative;
+    left: 211px;
+    top: 21px;
+}
+.log {
+    border-left: 1px solid black;
+    padding-left: 7px;
+    width: 111px;
+    height: 40px;
+    position: relative;
+    left: 271px;
+    top: -19px;
+}
+.compass, .cora ,.person {
+    width: 22px;
+}
+header nav ul li {
+	color:rgba(0,0,0,.8);
+	text-decoration: none;
+	display: block;
+	font-size:18px;
+	padding:0 15px;
+    line-height:80px;
+    float: left;
+    position: relative;
+    top: -120px;
+    left: 960px;
+}
+.page {
+    position: static;
+}
+.perfil {
+    border-radius: 50%;
+    position: absolute;
+    top: 135px;
+    left: 275px;
+}
+.nombre {
+    position: relative;
+    width: 300px;
+    top: 147px;
+    left: 527px;
+    font-weight: 200;
+    font-size: 32px;
+}
+.button {
+    position: relative;
+    top: 110px;
+    width: 118px;
+    height: 27px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    left: 655px;
+    border-radius: 3px;
+}
+.gear{
+    width: 20px;
+    position: relative;
+    top: 115px;
+    left: 667px;
+}
+nav ul li {
+    color:rgba(0,0,0,.8);
+	text-decoration: none;
+	display: block;
+	font-size:18px;
+	padding:0 15px;
+    line-height:80px;
+    float: left;
+    position: relative;
+    top: 90px;
+    left: 475px;
+    font-weight: lighter;
+}
+.re-name {
+    position: relative;
+    width: 130px;
+    top: 90px;
+    left: 527px; 
+    font-weight: bold;
+}
+.link {
+    position: relative;
+    left: 526px;
+    top: 95px;
+}
+@media screen and (max-width:667px){
+    .icon {
+        width: 25px;
+        position: relative;
+        left: 30px;
+        top: 21px;
+        margin-right: 7px;
+    }
+    .log {
+        border-left: 1px solid black;
+        padding-left: 7px;
+        width: 101px;
+        height: 40px;
+        position: relative;
+        left: 74px;
+        top: -15px;
+    }
+    header nav ul li {
+        color:rgba(0,0,0,.8);
+        text-decoration: none;
+        display: block;
+        font-size:18px;
+        padding:0 5px;
+        line-height:80px;
+        float: left;
+        position: relative;
+        top: -120px;
+        left: 200px;
+    }
+    .perfil {
+        border-radius: 50%;
+        position: absolute;
+        width: 75px;
+        top: 105px;
+        left: 20px;
+    }
+    .post-list {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 293px));
+        justify-content: center;
+        grid-gap: 5px;
+        border-top: 1px solid #F5F5F5;
+        padding-top: 20px;
+    }
+    .nombre {
+        position: relative;
+        width: 300px;
+        top: 100px;
+        left: 130px;
+        font-weight: 200;
+        font-size: 25px;
+    }
+    .gear{
+        width: 20px;
+        position: relative;
+        top: 75px;
+        left: 10px;
+    }
+    .button {
+        position: relative;
+        top: 110px;
+        width: 225px;
+        height: 27px;
+        background: #FAFAFA;
+        border: 1px solid #DBDBDB;
+        left: 130px;
+        border-radius: 3px;
+    }
+    .re-name {
+        position: relative;
+        width: 130px;
+        top: 30px;
+        left: 25px; 
+        font-weight: bold;
+        font-size: 14px; 
+    }
+    .link {
+        position: relative;
+        left: 25px;
+        top: 35px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    nav ul li {
+        color:rgba(0,0,0,.8);
+        text-decoration: none;
+        display: block;
+        font-size:15px;
+        padding:0 10px;
+        line-height:80px;
+        float: left;
+        position: relative;
+        top: 185px;
+        left: 2px;
+        font-weight: bold;
+        border-top: 1px solid #DBDBDB;
+    }
+}
